@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="request.css">
+    <title>
+      Request Blood — Blood Relay
+    </title>
+  </head>
+  <body class="bottom-space">
+    <header class="topbar">
+      <nav class="container nav">
+        <a class="logo" href="index.html">
+          <b class="logo-mark">
+          </b>
+          Blood <span class="red">Relay</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="about.html">
+            How It Works
+          </a>
+          <a href="search.html">
+            Find Donors
+          </a>
+          <a class="active" href="request.html">
+            Request Blood
+          </a>
+        </div>
+        <a class="nav-action" href="register.html">
+          Become a Donor
+        </a>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="container">
+        <div class="title">
+          <span class="eyebrow">
+            ● Emergency Request
+          </span>
+          <h1>
+            Request Blood
+          </h1>
+          <p>
+            We’ll find compatible donors near your hospital.
+          </p>
+        </div>
+        <form class="card form-card" action="request-created.html">
+          <div class="form-section">
+            <h3>
+              Patient Information
+            </h3>
+            <div class="fields">
+              <div class="field">
+                <label>
+                  Patient Name *
+                </label>
+                <input required placeholder="Patient’s name">
+              </div>
+              <div class="field">
+                <label>
+                  Contact Number *
+                </label>
+                <input required type="tel" placeholder="+91 98765 43210">
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3>
+              Blood Group Required *
+            </h3>
+            <div class="group-choice">
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  A+
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  A−
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  B+
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  B−
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  AB+
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  AB−
+                </span>
+              </label>
+              <label>
+                <input checked type="radio" name="blood">
+                <span>
+                  O+
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="blood">
+                <span>
+                  O−
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3>
+              Hospital Details
+            </h3>
+            <div class="fields">
+              <div class="field">
+                <label>
+                  Number of Units *
+                </label>
+                <select>
+                  <option>
+                    2 units
+                  </option>
+                  <option>
+                    1 unit
+                  </option>
+                  <option>
+                    3 units
+                  </option>
+                </select>
+              </div>
+              <div class="field">
+                <label>
+                  Hospital Name *
+                </label>
+                <input required placeholder="CityCare Hospital">
+              </div>
+              <div class="field full">
+                <label>
+                  Hospital Address
+                </label>
+                <input placeholder="Full hospital address">
+              </div>
+              <div class="field">
+                <label>
+                  City
+                </label>
+                <input value="Mumbai">
+              </div>
+              <div class="field">
+                <label>
+                  Required By *
+                </label>
+                <input type="datetime-local" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3>
+              Emergency Level *
+            </h3>
+            <div class="urgency">
+              <label>
+                <input checked name="urgency" type="radio">
+                <b>
+                  Critical
+                </b>
+                <br>
+                <small>
+                  Life is in immediate danger
+                </small>
+              </label>
+              <label>
+                <input name="urgency" type="radio">
+                <b>
+                  Urgent
+                </b>
+                <br>
+                <small>
+                  Needed within a few hours
+                </small>
+              </label>
+              <label>
+                <input name="urgency" type="radio">
+                <b>
+                  Normal
+                </b>
+                <br>
+                <small>
+                  Scheduled procedure or surgery
+                </small>
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="field">
+              <label>
+                Additional Information
+              </label>
+              <textarea rows="3" placeholder="Any additional details for the donor…">
+              </textarea>
+            </div>
+          </div>
+          <aside class="notice">
+            ⚠
+            <span>
+              <b>
+                Critical alert!
+              </b>
+              All nearby compatible donors will be notified immediately.
+            </span>
+          </aside>
+          <div class="form-actions">
+            <a class="btn btn-outline" href="index.html">
+              Cancel
+            </a>
+            <button class="btn btn-primary">
+              Create Emergency Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <i>
+          ⌂
+        </i>
+        Home
+      </a>
+      <a href="request.html">
+        <i>
+          ♥
+        </i>
+        Request
+      </a>
+      <a href="search.html">
+        <i>
+          ⌕
+        </i>
+        Search
+      </a>
+      <a href="notifications.html">
+        <i>
+          ♧
+        </i>
+        Alerts
+      </a>
+      <a href="profile.html">
+        <i>
+          ♙
+        </i>
+        Profile
+      </a>
+    </nav>
+  </body>
+</html>

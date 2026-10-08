@@ -1,0 +1,9 @@
+/* Page styles: request-ready.html. Shared components and tokens live in styles.css. */
+@import url("styles.css");
+
+.quick-page .flow-shell { max-width: 760px; }
+.quick-page h1 { margin: 14px 0 6px; }
+.request-choice { display: none; }
+.request-choice:target { display: block; }
+body:has(.request-choice:target) .request-choice--default { display: none; }
+.request-choice--default { display: block; }

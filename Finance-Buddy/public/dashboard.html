@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinanceBuddy – Family Dashboard</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <a href="#" class="logo" aria-label="FinanceBuddy home">
+        <span class="logo__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6l-8-3Z" />
+            <path d="m8.5 12 2.5 2.5 4.5-5" />
+          </svg>
+        </span>
+        <span class="logo__text"><span class="logo__finance">Finance</span><span class="logo__buddy">Buddy</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <span class="nav__badge">PARENTS</span>
+        <a href="#" class="nav__link nav__link--active" aria-current="page">Overview</a>
+        <a href="#" class="nav__link">Chores &amp; Allowance</a>
+        <a href="#" class="nav__link">Emergency Vault</a>
+        <a href="#" class="nav__link">My Child</a>
+        <a href="#" class="nav__link">Transactions</a>
+      </nav>
+
+      <div class="user">
+        <div class="user__text">
+          <strong>Sarah Jenkins</strong>
+          <span>Guardian Account</span>
+        </div>
+        <img src="sarah.jpg" alt="Sarah Jenkins" class="avatar avatar--small" />
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ============ DASHBOARD ============ -->
+    <section class="dashboard">
+
+      <!-- ---------- LEFT COLUMN ---------- -->
+      <div class="dashboard__main">
+
+        <div class="page-head">
+          <div>
+            <h1>Sarah's Family Dashboard</h1>
+            <p>Guiding 1 active child account</p>
+          </div>
+          <button type="button" class="btn-fund">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" /><path d="M12 5v14" />
+            </svg>
+            Fund Child Wallet
+          </button>
+        </div>
+
+        <!-- Child overview card -->
+        <article class="card card--child">
+          <div class="child__top">
+            <div class="child__info">
+              <img src="leo.jpg" alt="Leo Jenkins" class="avatar" />
+              <div>
+                <h2 class="child__name">Leo Jenkins</h2>
+                <p class="child__meta">
+                  <span>Age 14 • Active Plan</span>
+                  <span class="tag tag--stable">HIGHLY STABLE</span>
+                </p>
+              </div>
+            </div>
+            <div class="child__balance">
+              <span class="child__balance-label">TOTAL MANAGED BALANCE</span>
+              <strong class="child__balance-value">$1,450.00</strong>
+            </div>
+          </div>
+
+          <div class="allocation__head">
+            <h3>Active AI Allocation (Age 14 Standard)</h3>
+            <a href="#" class="link-indigo">Modify AI Plan</a>
+          </div>
+
+          <div class="allocation__bar" role="img"
+               aria-label="50% everyday spending, 30% emergency locked, 20% smart savings">
+            <span class="seg seg--blue"   style="width: 50%"></span>
+            <span class="seg seg--orange" style="width: 30%"></span>
+            <span class="seg seg--green"  style="width: 20%"></span>
+          </div>
+
+          <ul class="legend">
+            <li><i class="dot dot--blue"></i>50% Everyday Spending ($725.00)</li>
+            <li><i class="dot dot--orange"></i>30% Emergency locked ($435.00)</li>
+            <li><i class="dot dot--green"></i>20% Smart Savings ($290.00)</li>
+          </ul>
+        </article>
+
+        <!-- Goal + alerts -->
+        <div class="row-2">
+
+          <article class="card card--small">
+            <h3 class="card__title">Goal Progress</h3>
+            <div class="goal">
+              <svg class="goal__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
+              </svg>
+              <div class="goal__body">
+                <div class="goal__row">
+                  <span class="goal__name">New Coding Laptop</span>
+                  <span class="goal__amount">$960 / $1,200</span>
+                </div>
+                <!-- change --progress to 80% if you want the bar to match $960 / $1,200 -->
+                <div class="progress" style="--progress: 55%"><span></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--small">
+            <h3 class="card__title">AI Smart Alerts</h3>
+            <p class="alert">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                <path d="M12 9v4" /><path d="M12 17h.01" />
+              </svg>
+              Emergency fund intact. Spending velocity is moderate.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- RIGHT COLUMN ---------- -->
+      <aside class="dashboard__side">
+
+        <article class="card card--approval">
+          <div class="approval__head">
+            <h3 class="card__title">Approval Requested</h3>
+            <span class="tag tag--urgent">URGENT</span>
+          </div>
+          <p class="card__text">Leo wants to draw $240 from his savings to purchase a laptop.</p>
+          <button type="button" class="btn-review">Review Request</button>
+        </article>
+
+        <article class="card card--coach">
+          <div class="coach__head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+              <path d="M20 3v4" /><path d="M22 5h-4" /><path d="M4 17v2" /><path d="M5 18H3" />
+            </svg>
+            <h3 class="card__title">AI Guardian Coach</h3>
+          </div>
+          <p class="card__text">
+            "Leo's savings habit is 15% better than average peers of his age. Maintaining the
+            50/30/20 plan is highly recommended for building healthy emergency backup buffers early."
+          </p>
+        </article>
+
+      </aside>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features">
+      <h2>A Modern Approach to Family Finance</h2>
+      <p class="features__intro">
+        Say goodbye to simple spending limits. FinanceBuddy guides you through a balanced,
+        visual structure that helps them budget intelligently.
+      </p>
+
+      <div class="features__grid">
+
+        <article class="card card--feature">
+          <span class="feature__icon feature__icon--indigo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+            </svg>
+          </span>
+          <h3>Parent-Funded &amp; Approvals</h3>
+          <p>Instantly fund your kid's card. Monitor transactions in real-time, set instant merchant
+             category locks, and approve/decline savings drawdowns with a tap.</p>
+        </article>
+
+        <article class="card card--feature">
+          <span class="feature__icon feature__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="16" height="16" x="4" y="4" rx="2" />
+              <rect width="6" height="6" x="9" y="9" rx="1" />
+              <path d="M15 2v2" /><path d="M15 20v2" /><path d="M2 15h2" /><path d="M2 9h2" />
+              <path d="M20 15h2" /><path d="M20 9h2" /><path d="M9 2v2" /><path d="M9 20v2" />
+            </svg>
+          </span>
+          <h3>Age-Aware AI Plans</h3>
+          <p>Our intelligent assistant suggests optimal allocation ratios (e.g. 50% Everyday, 30%
+             Emergency, 20% Savings) customized exactly to your child's age, goals, and behavioral habits.</p>
+        </article>
+
+        <article class="card card--feature">
+          <span class="feature__icon feature__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
+          </span>
+          <h3>Goal &amp; Emergency Guard</h3>
+          <p>Emergency funds are locked down tightly. Savings require friendly, automated reasoning
+             before requests are sent to the parents, sparking real-world coaching.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* Page styles: quick-request.html. Shared components and tokens live in styles.css. */
+@import url("styles.css");
+
+.quick-page .flow-shell { max-width: 760px; }
+.quick-page h1 { margin: 14px 0 6px; }
+.choice-heading { margin-bottom: 16px; font-size: 17px; }
+.demo-note { margin: 18px 0 0; text-align: center; color: var(--muted); font-size: 12px; }
+.quick-options a { min-height: 72px; display: grid; place-items: center; border: 2px solid var(--line); border-radius: 15px; background: #fff; color: var(--ink); font-size: 20px; font-weight: 900; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
+.quick-options a:hover, .quick-options a:focus-visible { border-color: var(--red); background: #fff1f2; transform: translateY(-2px); outline: 3px solid #fecdd3; outline-offset: 2px; }

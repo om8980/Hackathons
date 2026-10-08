@@ -1,0 +1,5 @@
+/* Page styles: state-request-expired.html. Shared components and tokens live in styles.css. */
+@import url("styles.css");
+
+.state-card { overflow: hidden; background-image: radial-gradient(circle at 50% 15%, rgba(244, 63, 94, .08), transparent 32%); }
+.state-icon { box-shadow: 0 0 0 12px rgba(244, 63, 94, .07), 0 0 0 24px rgba(244, 63, 94, .035); }

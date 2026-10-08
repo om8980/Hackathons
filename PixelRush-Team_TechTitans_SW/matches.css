@@ -1,0 +1,8 @@
+/* Page styles: matches.html. Shared components and tokens live in styles.css. */
+@import url("styles.css");
+
+.request-group-line { margin: -2px 0 18px; color: var(--muted); font-size: 13px; font-weight: 700; }
+.request-group-option { display: none; padding: 4px 10px; border-radius: 999px; background: #fee2e2; color: var(--red-dark); }
+.request-group-default { display: inline-flex; }
+.request-group-option:target { display: inline-flex; }
+body:has(.request-group-option:target) .request-group-default { display: none; }

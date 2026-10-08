@@ -1,0 +1,425 @@
+/* =========================================================
+   INDEX PAGE STYLES
+   ---------------------------------------------------------
+   Shared styles and CSS variables are available in:
+   styles.css
+   ========================================================= */
+
+@import url("styles.css");
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+/* Vertically center all items inside the hero grid */
+.hero-grid {
+  align-items: center;
+}
+
+
+/* Keep network elements isolated from outside stacking contexts */
+.network {
+  isolation: isolate;
+}
+
+
+/* Small text used for demo/disclosure information */
+.demo-disclosure {
+  margin: 16px 0 0;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   DONOR SUPPORT SECTION
+   ========================================================= */
+
+.donor-support {
+  /* Allows positioned child elements inside this section */
+  position: relative;
+
+  /* Prevent decorative backgrounds from overflowing */
+  overflow: hidden;
+
+  /* Top and bottom spacing */
+  padding: 76px 0;
+
+  /* Soft pink radial background */
+  background:
+    radial-gradient(
+      circle at 8% 18%,
+      #ffe4e8 0,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 92% 82%,
+      #fff0f2 0,
+      transparent 22%
+    ),
+    #fffafa;
+}
+
+
+/* =========================================================
+   DONOR SUPPORT - HEADING
+   ========================================================= */
+
+.donor-support-heading {
+  /* Prevent the heading from becoming too wide */
+  max-width: 720px;
+
+  /* Center the heading container */
+  margin: 0 auto 34px;
+
+  /* Center heading text */
+  text-align: center;
+}
+
+
+/* Main heading */
+.donor-support-heading h2 {
+  margin: 14px 0 10px;
+
+  /* Responsive font size:
+     minimum: 28px
+     preferred: 4vw
+     maximum: 40px
+  */
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+
+/* Description below the heading */
+.donor-support-heading p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   DONOR SUPPORT - MAIN LAYOUT
+   ========================================================= */
+
+.donor-support-layout {
+  display: grid;
+
+  /* Two equal columns on desktop */
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  /* Space between image and content */
+  gap: 28px;
+
+  /* Make both columns equal in height */
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   DONOR SUPPORT - IMAGE CONTAINER
+   ========================================================= */
+
+.donor-support-photo {
+  position: relative;
+
+  /* Center the image */
+  display: grid;
+  place-items: center;
+
+  min-height: 100%;
+  margin: 0;
+
+  /* Space around the image */
+  padding: 20px;
+
+  /* Hide anything outside rounded container */
+  overflow: hidden;
+
+  /* Light border */
+  border: 1px solid #ffe4e6;
+
+  /* Rounded corners */
+  border-radius: 24px;
+
+  /* Soft white/pink background */
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      #fff 0,
+      #fff 52%,
+      #fff5f6 100%
+    );
+
+  /* Soft shadow */
+  box-shadow: 0 20px 48px #7f1d1d18;
+}
+
+
+/* =========================================================
+   DONOR SUPPORT - IMAGE
+   ========================================================= */
+
+.donor-support-image {
+  display: block;
+
+  /* Image cannot become wider than its container
+     and has a maximum width of 540px */
+  width: min(100%, 540px);
+
+  /* Keep image square */
+  aspect-ratio: 1;
+
+  /* Preserve the complete image */
+  object-fit: contain;
+
+  /* Rounded image corners */
+  border-radius: 22px;
+
+  /* Soft shadow around the image */
+  filter: drop-shadow(0 16px 24px #9f12391c);
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+   ========================================================= */
+
+.donor-support-photo figcaption {
+  /* Place caption at the bottom of the image container */
+  position: absolute;
+  inset: auto 16px 16px;
+
+  padding: 12px 15px;
+
+  /* Glass-like border */
+  border: 1px solid #ffffff90;
+
+  border-radius: 14px;
+
+  /* Semi-transparent white background */
+  background: #ffffffdf;
+
+  color: var(--ink);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  /* Blur content behind the caption */
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   DONOR SUPPORT - CONTENT PANEL
+   ========================================================= */
+
+.donor-support-panel {
+  padding: 26px;
+
+  border: 1px solid #fee2e2;
+  border-radius: 24px;
+
+  /* White to light-pink gradient */
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #fff7f8
+  );
+
+  /* Soft shadow */
+  box-shadow: 0 18px 44px #7f1d1d12;
+}
+
+
+/* =========================================================
+   TRANSPORT / GOODIES ITEMS
+   ========================================================= */
+
+.donor-transport,
+.donor-goodies article {
+  display: grid;
+
+  /* First column = icon
+     Second column = text */
+  grid-template-columns: 42px 1fr;
+
+  gap: 14px;
+
+  /* Align content at the top */
+  align-items: start;
+}
+
+
+/* Transport information box */
+.donor-transport {
+  padding: 20px;
+
+  border: 1px solid #fecdd3;
+  border-radius: 18px;
+
+  /* Slightly transparent pink background */
+  background: #fff7f7ed;
+}
+
+
+/* =========================================================
+   SUPPORT ICON
+   ========================================================= */
+
+.support-icon {
+  display: grid;
+
+  width: 40px;
+  height: 40px;
+
+  /* Center icon inside the box */
+  place-items: center;
+
+  border-radius: 13px;
+
+  background: #fee2e2;
+
+  color: var(--red);
+
+  font-size: 23px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   PANEL TYPOGRAPHY
+   ========================================================= */
+
+.donor-support-panel h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+
+.donor-support-panel p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   DONOR GOODIES
+   ========================================================= */
+
+.donor-goodies {
+  display: grid;
+
+  /* Space between goodies */
+  gap: 18px;
+
+  padding: 22px 6px;
+}
+
+
+/* =========================================================
+   CALL TO ACTION BUTTON
+   ========================================================= */
+
+.donor-support-cta {
+  display: inline-flex;
+
+  /* Center button content */
+  align-items: center;
+  justify-content: center;
+
+  /* Minimum button height */
+  min-height: 50px;
+}
+
+
+/* Small note below CTA */
+.donor-support-note {
+  margin-top: 12px !important;
+  font-size: 11px !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* Change two-column layout
+     into a single-column layout */
+  .donor-support-layout {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Make image container responsive */
+  .donor-support-photo {
+    min-height: 0;
+
+    /* Slightly wider than a square */
+    aspect-ratio: 1.15;
+
+    padding: 14px;
+  }
+
+
+  /* Reduce maximum image width */
+  .donor-support-image {
+    width: min(100%, 500px);
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  /* Reduce section spacing on mobile */
+  .donor-support {
+    padding: 54px 0;
+  }
+
+
+  /* Reduce panel padding */
+  .donor-support-panel {
+    padding: 17px;
+  }
+
+
+  /* Move caption into normal document flow */
+  .donor-support-photo figcaption {
+    position: static;
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    text-align: center;
+  }
+
+
+  /* Make CTA button full width */
+  .donor-support-cta {
+    width: 100%;
+  }
+}
+/* Keep room for the fixed mobile navigation, without a desktop footer gap. */
+.bottom-space {
+  padding-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .bottom-space {
+    padding-bottom: 88px;
+  }
+}
+

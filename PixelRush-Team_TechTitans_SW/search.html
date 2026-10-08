@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="search.css">
+    <title>
+      Find Donors — Blood Relay
+    </title>
+  </head>
+  <body class="bottom-space">
+    <header class="topbar">
+      <nav class="container nav">
+        <a class="logo" href="index.html">
+          <b class="logo-mark">
+          </b>
+          Blood <span class="red">Relay</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="about.html">
+            How It Works
+          </a>
+          <a class="active" href="search.html">
+            Find Donors
+          </a>
+          <a href="request.html">
+            Request Blood
+          </a>
+        </div>
+        <a class="nav-action" href="register.html">
+          Become a Donor
+        </a>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h1>
+              Find Blood Donors
+            </h1>
+            <p>
+              Illustrative donor profiles · Mumbai · no live directory
+            </p>
+          </div>
+        </div>
+        <div class="filter-row">
+          <input class="searchbox" aria-label="Search donors" placeholder="⌕  Search by name, blood group, or location…">
+          <button class="btn btn-outline">
+            ⚙ Filters
+          </button>
+          <a class="btn btn-primary" href="#map">
+            ⌖ Map
+          </a>
+        </div>
+        <div class="chips">
+          <span class="chip active">
+            All
+          </span>
+          <span class="chip">
+            A+
+          </span>
+          <span class="chip">
+            A−
+          </span>
+          <span class="chip">
+            B+
+          </span>
+          <span class="chip">
+            B−
+          </span>
+          <span class="chip">
+            AB+
+          </span>
+          <span class="chip">
+            O+
+          </span>
+          <span class="chip">
+            O−
+          </span>
+        </div>
+        <div class="split">
+          <div class="donor-grid">
+            <article class="card donor-card">
+              <div class="donor-head">
+                <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Rahul Sharma">
+                <div class="donor-name">
+                  <div>
+                    <h3>
+                      Rahul Sharma
+                    </h3>
+                    <small class="verified">
+                      ✓ Demo Profile
+                    </small>
+                  </div>
+                  <span class="blood">
+                    O+
+                  </span>
+                </div>
+              </div>
+              <span class="status">
+                🟢 Available Now
+              </span>
+              <p class="metadata">
+                ⌖ 1.8 km · ◷ Active 2 min ago · 14 donations
+              </p>
+              <div class="form-actions">
+                <a class="btn btn-outline" href="donor-profile.html">
+                  View Profile
+                </a>
+                <a class="btn btn-primary" href="contact-confirm.html">
+                  Contact
+                </a>
+              </div>
+            </article>
+            <article class="card donor-card">
+              <div class="donor-head">
+                <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop" alt="Priya Patel">
+                <div class="donor-name">
+                  <div>
+                    <h3>
+                      Priya Patel
+                    </h3>
+                    <small class="verified">
+                      ✓ Demo Profile
+                    </small>
+                  </div>
+                  <span class="blood">
+                    A+
+                  </span>
+                </div>
+              </div>
+              <span class="status">
+                🟢 Available Now
+              </span>
+              <p class="metadata">
+                ⌖ 2.3 km · ◷ Active 15 min ago · 7 donations
+              </p>
+              <div class="form-actions">
+                <a class="btn btn-outline" href="donor-profile.html">
+                  View Profile
+                </a>
+                <a class="btn btn-primary" href="contact-confirm.html">
+                  Contact
+                </a>
+              </div>
+            </article>
+            <article class="card donor-card">
+              <div class="donor-head">
+                <img class="avatar" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=120&h=120&fit=crop" alt="Sneha Reddy">
+                <div class="donor-name">
+                  <div>
+                    <h3>
+                      Sneha Reddy
+                    </h3>
+                    <small class="verified">
+                      ✓ Demo Profile
+                    </small>
+                  </div>
+                  <span class="blood">
+                    AB+
+                  </span>
+                </div>
+              </div>
+              <span class="status">
+                🟢 Available Now
+              </span>
+              <p class="metadata">
+                ⌖ 0.9 km · ◷ Active just now · 21 donations
+              </p>
+              <div class="form-actions">
+                <a class="btn btn-outline" href="donor-profile.html">
+                  View Profile
+                </a>
+                <a class="btn btn-primary" href="contact-confirm.html">
+                  Contact
+                </a>
+              </div>
+            </article>
+          </div>
+          <aside id="map" class="map" aria-label="Map of donor locations">
+            <i class="marker one">
+              <span>
+                ♥
+              </span>
+            </i>
+            <i class="marker two">
+              <span>
+                ♥
+              </span>
+            </i>
+            <i class="marker three">
+              <span>
+                ♥
+              </span>
+            </i>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <i>
+          ⌂
+        </i>
+        Home
+      </a>
+      <a href="request.html">
+        <i>
+          ♥
+        </i>
+        Request
+      </a>
+      <a href="search.html">
+        <i>
+          ⌕
+        </i>
+        Search
+      </a>
+      <a href="notifications.html">
+        <i>
+          ♧
+        </i>
+        Alerts
+      </a>
+      <a href="profile.html">
+        <i>
+          ♙
+        </i>
+        Profile
+      </a>
+    </nav>
+  </body>
+</html>
