@@ -26,7 +26,7 @@ For example, if Python is installed:
 python -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+Then visit https://pixelrush-team-techtitans-bloodrelay.vercel.app/.
 
 ## Project structure
 
